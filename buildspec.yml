@@ -16,12 +16,15 @@ phases:
     - mvn package
     - mv target/hello-1.0.war hello-1.0.war
     - cd ..
+    - cp target/hello-1.0.war .
     - cd app2
     - mvn package
     - mv target/hello-2.0.war hello-2.0.war
+    - cd ..
+    - cp target/hello-2.0.war .
 #    - boxfuse run target/hello-1.0.war
 artifacts:
   files:
-  - app1/hello-1.0.war
-  - app2/hello-2.0.war
+  - hello-1.0.war
+  - hello-2.0.war
   - .ebextensions/**/*
