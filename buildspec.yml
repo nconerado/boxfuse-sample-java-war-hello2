@@ -22,6 +22,6 @@ phases:
 #    - boxfuse run target/hello-1.0.war
 artifacts:
   files:
-  - hello-1.0.war
-  - hello-2.0.war
+  - app1/hello-1.0.war
+  - app2/hello-2.0.war
   - .ebextensions/**/*
