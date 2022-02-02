@@ -14,12 +14,12 @@ phases:
     - echo Build completed on `date`
     - cd app1
     - mvn package
-    - mv target/hello-1.0.war hello-1.0.war
+#    - mv target/hello-1.0.war hello-1.0.war
     - cd ..
     - cp app1/target/hello-1.0.war .
     - cd app2
     - mvn package
-    - mv target/hello-2.0.war hello-2.0.war
+#    - mv target/hello-2.0.war hello-2.0.war
     - cd ..
     - cp app2/target/hello-2.0.war .
 #    - boxfuse run target/hello-1.0.war
